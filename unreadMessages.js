@@ -6,9 +6,9 @@ function MailBox(props) {
     return (
         <div>
             <h1>Hello!</h1>
-            {unreadMessages.length > 0 &&
+            {/*{unreadMessages.length > 0 &&*/}
                 <h2>
-                    You have {unreadMessages.length} unread messages.
+                    You have {unreadMessages.length > 0 ? unreadMessages.length : 'no'} unread messages.
                 </h2>
             }
         </div>
