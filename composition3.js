@@ -26,9 +26,22 @@ class SignUpDialog extends React.Component {
     render() {
         return (
             <Dialog title='Mars something there' message='How are you'>
-                <input/>
+                <input
+                    value={this.state.login}
+                    onChange={this.handleChange} />
+                <button onClick={this.handleSignUp}>
+                    Sign me up!
+                </button>
             </Dialog>
         );
+    }
+
+    handleChange(e) {
+        this.setState({login:e.target.value});
+    }
+
+    handleSignUp() {
+        alert('Welcome!');
     }
 
 }
