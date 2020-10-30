@@ -46,3 +46,5 @@ ReactDOM.render(
     <App />,
     document.getElementById('root')
 );
+
+//UPDATING CONTENTS FROM A NESTED COMPONENT;
