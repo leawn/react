@@ -4,7 +4,8 @@ import StarRating from './starRating';
 
 function App() {
   return (
-      <StarRating />
+      <StarRating style={{ backgroundColor: 'lightblue'}}
+      />
   )
 }
 
