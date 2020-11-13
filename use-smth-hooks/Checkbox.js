@@ -4,7 +4,7 @@ function Checkbox() {
     const [checked, setChecked] = useState(false);
 
     useEffect(() => {
-        console.log(`checked: ${checked.toString()}`);
+        txtInputRef.current.focus();
     })
 
     return (
