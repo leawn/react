@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useInput } from "./useInputFunc";
-import { useColors} from "../color-hooks";
+import { useColors } from "../color-hooks";
 
 export default function AddColorForm() {
     const [titleProps, resetTitle] = useInput('');

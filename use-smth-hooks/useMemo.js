@@ -6,5 +6,5 @@ const words = useMemo(() => {
 }, []);
 
 useEffect(() => {
-    console.log('fresh render');
+    console.log('fresh render-props');
 }, [words]);
