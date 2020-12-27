@@ -43,7 +43,7 @@ function App() {
           </div>
 
           <div
-              onClick={state !== true ? handleExpand : handleShrink}
+              onClick={state !== true ? handleExpand : handleShrink }
               ref={el => {circleRed = el}}
               className='circle red'>
           </div>
