@@ -11,20 +11,22 @@ import {
     Position
 } from "../styles/elements";
 
-const Job = ({ Company }) => {
+const Job = (props) => {
     return (
         <JobRow>
+            {console.log(props.Company)}
+            {console.log(`../assets/${props.Company}.png`)}
             <JobInner>
                 <CompanyLogo>
-                    <img src={require(`../assets/${Company}.png`)} alt={`${Company} logo`}/>
+                    <img src={require(`../assets/${props.Company}.png`).default} alt={`${props.Company} logo`}/>
                 </CompanyLogo>
                 <JobDescription>
-                    <CompanyName>{Company}</CompanyName>
-                    <Position>Senior Software Engineer</Position>
+                    <CompanyName>{props.Company}</CompanyName>
+                    <Position>{props.Title}</Position>
                 </JobDescription>
                 <JobMisc>
-                    <Date>8 days ago</Date>
-                    <Location>Mountain View, CA</Location>
+                    <Date>{props.DatePosted}</Date>
+                    <Location>{props.Location}</Location>
                 </JobMisc>
             </JobInner>
         </JobRow>

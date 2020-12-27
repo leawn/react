@@ -13,10 +13,8 @@ function App() {
         <Main>
             <Container>
                 <JobContainer>
-                    {
-                        jobsAvailable.map((job, index) => {
-                            return <Job Company={job.company} Title={job.title} Location={job.location} DatePosted={job.datePosted}/>
-                        })
+                    {jobsAvailable.map((job, index) => (
+                            <Job Company={job.company} Title={job.title} Location={job.location} DatePosted={job.datePosted}/>))
                     }
                 </JobContainer>
             </Container>
