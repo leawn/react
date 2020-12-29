@@ -15,5 +15,5 @@ export const StyledModal = styled.div`
   @media (min-width: 600px) {
     width: 500px;
     left: calc(50% - 250px);
-  }
+  };
 `;
