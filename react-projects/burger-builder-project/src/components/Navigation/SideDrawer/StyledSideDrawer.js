@@ -29,4 +29,11 @@ export const StyledSideDrawer = styled.div`
 
 export const StyledLogoSideDrawer = styled.div`
   height: 11%;
+  margin-bottom: 32px;
+`;
+
+export const StyledNavigation = styled.nav`
+  @media (max-width: 499px) {
+    display: none;
+  }
 `;

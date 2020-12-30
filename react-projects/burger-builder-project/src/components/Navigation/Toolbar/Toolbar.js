@@ -2,6 +2,7 @@ import React from 'react';
 import {StyledLogoToolbar, StyledToolbar} from "./StyledToolbar";
 import Logo from "../../Logo/Logo";
 import NavigationItems from "../NavigationItems/NavigationItems";
+import {StyledNavigation} from "../SideDrawer/StyledSideDrawer";
 
 const Toolbar = (props) => (
     <StyledToolbar>
@@ -9,9 +10,9 @@ const Toolbar = (props) => (
         <StyledLogoToolbar>
             <Logo/>
         </StyledLogoToolbar>
-        <nav>
+        <StyledNavigation>
             <NavigationItems/>
-        </nav>
+        </StyledNavigation>
     </StyledToolbar>
 );
 
