@@ -8,7 +8,7 @@ import Backdrop from "../../UI/Backdrop/Backdrop";
 const SideDrawer = (props) => {
     return (
         <Aux>
-            <Backdrop show/>
+            <Backdrop show={props.show} onClick={props.closed}/>
             <StyledSideDrawer>
                 <StyledLogoSideDrawer>
                     <Logo/>
