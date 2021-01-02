@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
 //better to use:
+//import { Suspense } from 'react';
 // const importComponent = React.lazy( () => import('./...'));
 // only for default exports tho
+// <Route path='/importComponentPage' render={() => <Suspense fallback={...}><ImportComponent/></Suspense>}
 
 const asyncComponent = (importComponent) => {
     return class extends Component {
