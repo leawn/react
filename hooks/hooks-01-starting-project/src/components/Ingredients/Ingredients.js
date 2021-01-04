@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import IngredientForm from './IngredientForm';
 import Search from './Search';
 
-function Ingredients() {
+const Ingredients = () => {
   return (
     <div className="App">
       <IngredientForm />
