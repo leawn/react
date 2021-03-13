@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Hamburger from "./Hamburger";
 
 const Header = () => {
     return <header>
@@ -17,6 +18,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
+        <Hamburger />
     </header>;
 };
 
